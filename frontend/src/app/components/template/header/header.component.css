@@ -1,0 +1,12 @@
+.header .logo {
+    max-width: 80px;
+    max-height: 80px;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+}
+.header .title{
+    padding: 25px;
+}
