@@ -1,0 +1,21 @@
+.chat{
+    height: 400px;
+    width: 370px;
+    border: solid rgb(41, 39, 39) 1px;
+    border-radius: 3px;
+    margin: 20px auto;
+    position: relative;
+    background-color: rgb(204, 204, 197);
+    opacity: 0.2;
+}
+.chat #messages-area{
+    height: 85%;
+    width: 100%;
+    background-color: rgb(197, 235, 222);
+
+}
+
+.chat #message-send{
+    display: grid;
+    grid-template-columns: 1fr;
+}

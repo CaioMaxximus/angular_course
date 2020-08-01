@@ -5,13 +5,19 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HeaderComponent } from './components/template/header/header.component';
-import {MatToolbarModule} from '@angular/material/toolbar'
+import {MatToolbarModule} from '@angular/material/toolbar';
+import { FooterComponent } from './components/template/footer/footer.component';
+import { LoginComponent } from './components/views/login/login.component';
+import { ChatComponent } from './components/views/chat/chat.component'
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent
+    HeaderComponent,
+    FooterComponent,
+    LoginComponent,
+    ChatComponent
   ],
   imports: [
     BrowserModule,
