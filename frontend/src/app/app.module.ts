@@ -8,8 +8,10 @@ import { HeaderComponent } from './components/template/header/header.component';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import { FooterComponent } from './components/template/footer/footer.component';
 import { LoginComponent } from './components/views/login/login.component';
-import { ChatComponent } from './components/views/chat/chat.component'
-
+import { ChatComponent } from './components/views/chat/chat.component';
+import { NavComponent } from './components/template/nav/nav.component'
+import {MatSidenavModule} from '@angular/material/sidenav';
+import {MatListModule} from '@angular/material/list';
 
 @NgModule({
   declarations: [
@@ -17,13 +19,16 @@ import { ChatComponent } from './components/views/chat/chat.component'
     HeaderComponent,
     FooterComponent,
     LoginComponent,
-    ChatComponent
+    ChatComponent,
+    NavComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatToolbarModule
+    MatToolbarModule,
+    MatSidenavModule,
+    MatListModule
   ],
   providers: [],
   bootstrap: [AppComponent]
