@@ -1,21 +1,30 @@
 <mat-sidenav-container>
-    <mat-sidenav class = "sidenav" mode="side" opened
-    fixedInViewport = "true" fixedTopGap = "64">
-        <mat-nav-list class = "nav-list">
-            <a href="" mat-list-item>
-                <i class="material-icons">
-                    message
-                </i>Chat
-            </a>
-            <a href="" mat-list-item>
-                <i class="material-icons">
-                    login
-                </i>
-                Account
-            </a>
+    <mat-sidenav class="sidenav " mode="side" opened fixedInViewport="true" fixedTopGap="64">
+        <mat-nav-list class="nav-list">
+            <span>
+                <a href="" mat-list-item routerLink = "/chat">
+                    <i class="material-icons">
+                        message
+                    </i>Chat
+                </a>
+            </span>
+
+            <span>
+                <a href="" mat-list-item  routerLink = "/login">
+                    <i class="material-icons">
+                        login
+                    </i>
+                    Account
+                </a>
+            </span>
+
+
 
         </mat-nav-list>
 
     </mat-sidenav>
+    <mat-sidenav-content>
+        <router-outlet></router-outlet>
+    </mat-sidenav-content>
 
 </mat-sidenav-container>

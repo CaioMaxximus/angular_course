@@ -12,6 +12,7 @@ import { ChatComponent } from './components/views/chat/chat.component';
 import { NavComponent } from './components/template/nav/nav.component'
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatListModule} from '@angular/material/list';
+import { HomeComponent } from './components/views/home/home.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import {MatListModule} from '@angular/material/list';
     FooterComponent,
     LoginComponent,
     ChatComponent,
-    NavComponent
+    NavComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
