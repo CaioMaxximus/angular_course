@@ -2,13 +2,26 @@
   "users": [
     {
       "id": 1,
-      "name": "Robert",
+      "nick": "Robert",
       "email": "robert@email.com"
     },
     {
       "id": 2,
-      "name": "Roberto",
+      "nick": "Roberto",
       "email": "roberto@email.com"
+    }
+    
+  ],
+  "posts": [
+    {
+      "id": 1,
+      "authorNick": "Robert",
+      "content": "message"
+    },
+    {
+      "authorNick": "caio",
+      "content": "lala_pere",
+      "id": 2
     }
   ]
 }

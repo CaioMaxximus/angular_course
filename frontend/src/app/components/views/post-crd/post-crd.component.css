@@ -1,0 +1,59 @@
+#post-crd{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    /* grid-column-gap: ; */
+    grid-template-columns: 1fr;
+    overflow-y: scroll;
+}
+
+#post-crd .post-creator{
+
+    width: 40%;
+    justify-self: center;
+    margin : 5rem 0;
+    height: 200px;
+}
+
+
+#post-crd .post-creator textarea{
+    min-width: 100%;
+    min-height: 100%;
+    font: 500 0.95rem sans-serif
+}
+
+
+
+#post-crd .post-list{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+
+#post-crd .post-list ul{
+
+    width: 50%;
+    margin : 1.5rem 0;
+    padding: 0;
+    display: grid;
+    row-gap: 7px;
+    align-items: flex-start;
+
+}
+
+#post-crd .post-list span{
+    font : 110 1.1rem sans-serif;
+}
+
+#post-crd .post-list div{
+    background-color: white;
+    color: black;
+    padding: 5px;
+    border-radius: 3px;
+    height: 80px;
+    overflow-y:scroll;
+    overflow-x: hidden;
+    font : 500 0.95rem Archivo
+
+}
