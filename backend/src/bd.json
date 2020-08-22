@@ -19,9 +19,14 @@
       "content": "message"
     },
     {
+      "id": 2,
       "authorNick": "caio",
-      "content": "lala_pere",
-      "id": 2
+      "content": "aass"
+    },
+    {
+      "id": 3,
+      "authorNick": "caio",
+      "content": "aass"
     }
   ]
 }
