@@ -1,25 +1,38 @@
 #post-crd{
     width: 100%;
-    height: 100%;
+    height: 90%;
     display: grid;
-    /* grid-column-gap: ; */
     grid-template-columns: 1fr;
-    overflow-y: scroll;
 }
 
 #post-crd .post-creator{
 
     width: 40%;
-    justify-self: center;
-    margin : 5rem 0;
-    height: 200px;
+    max-width: 500px;
+    margin : 5rem auto;
+    height: 12rem;
+    display: grid;  
+    grid-template-rows: 1fr;
+    row-gap: 10px;
 }
 
 
 #post-crd .post-creator textarea{
-    min-width: 100%;
-    min-height: 100%;
-    font: 500 0.95rem sans-serif
+    font: 500 1.25rem sans-serif;
+    color: rgb(94, 92, 92);
+    padding: 3.5%;
+    margin : 0 auto;
+    width: 96.5%;
+
+}
+
+
+#post-crd .post-creator button{
+
+    width: 35%;
+    height: 30px;
+    justify-self: center;
+
 }
 
 
@@ -46,13 +59,33 @@
     font : 110 1.1rem sans-serif;
 }
 
-#post-crd .post-list div{
+
+#post-crd .post-list .post-options{
+    width: 20%;
+    justify-self: end;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    column-gap: 2px;
+
+}
+
+#post-crd .post-list .post-options button{
+    background: none ;
+    border : none;
+    opacity: 0.3;
+}
+
+#post-crd .post-list .post-options button:hover{
+    opacity: 1;
+}
+#post-crd .post-list .post-content{
     background-color: white;
     color: black;
     padding: 5px;
     border-radius: 3px;
     height: 80px;
-    overflow-y:scroll;
+    overflow-y:auto;
     overflow-x: hidden;
     font : 500 0.95rem Archivo
 

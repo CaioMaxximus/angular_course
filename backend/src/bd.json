@@ -10,23 +10,22 @@
       "nick": "Roberto",
       "email": "roberto@email.com"
     }
-    
   ],
   "posts": [
     {
-      "id": 1,
-      "authorNick": "Robert",
-      "content": "message"
+      "authorNick": null,
+      "content": "Flores crescem todo os anos, mas voce e unica",
+      "id": 1
     },
     {
-      "id": 2,
-      "authorNick": "caio",
-      "content": "aass"
+      "authorNick": null,
+      "content": "Ces viram o novo trailler que saiu????\n",
+      "id": 2
     },
     {
-      "id": 3,
-      "authorNick": "caio",
-      "content": "aass"
+      "authorNick": null,
+      "content": "Patrao",
+      "id": 3
     }
   ]
 }
