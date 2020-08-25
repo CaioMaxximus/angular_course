@@ -16,6 +16,8 @@ export class PostService implements OnInit{
   ngOnInit(){
   }
 
+ 
+
   get() :  Observable<Post[]>{
     return this.httpClient.get<Post[]>(`${this.route}/posts`)
 

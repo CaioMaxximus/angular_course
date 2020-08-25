@@ -16,6 +16,7 @@ export class PostCrdComponent implements OnInit {
   myId = localStorage.getItem('nick')
  
   ngOnInit(): void {
+
     this.postServc.get().subscribe((response) => {
       this.posts = response
       console.log(this.posts)
