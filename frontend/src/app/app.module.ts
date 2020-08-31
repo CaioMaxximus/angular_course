@@ -11,6 +11,8 @@ import { HttpClientModule } from '@angular/common/http'
 import { MatFormFieldModule } from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input'
 import {MatButtonModule} from '@angular/material/button';
+// import { Router } from '@angular/router'
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -21,7 +23,9 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
 import { HomeComponent } from './components/views/home/home.component';
 import { PostCrdComponent } from './components/views/post-crd/post-crd.component';
-import { FormsModule } from '@angular/forms';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
+
+
 
 @NgModule({
   declarations: [
@@ -32,6 +36,7 @@ import { FormsModule } from '@angular/forms';
     NavComponent,
     HomeComponent,
     PostCrdComponent,
+
   ],
   imports: [
     BrowserModule,
@@ -44,7 +49,9 @@ import { FormsModule } from '@angular/forms';
     FormsModule,
     MatFormFieldModule,
     MatInputModule,
-    MatButtonModule
+    MatButtonModule,
+    MatSnackBarModule
+    // Router
   ],
   providers: [],
   bootstrap: [AppComponent]

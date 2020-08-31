@@ -1,12 +1,20 @@
-<div class="login">
+<div id="login">
 
-    <div>
-        <h2>Login</h2>
+    <div class="content">
+
+        <div>
+            <h2>Login</h2>
+        </div>
+        <form>
+            <mat-form-field>
+                <input [(ngModel)] = "userData.nick" matInput placeholder="nickName" [ngModelOptions]="{standalone: true}"type="text">
+            </mat-form-field>   
+            <mat-form-field>
+                <input  [(ngModel)] = "userData.password" matInput placeholder="password" [ngModelOptions]="{standalone: true}" type="text">
+            </mat-form-field>
+            <button mat-button (click) = "loginUser()" >Login</button>
+        </form>
+    
     </div>
-    <form action="">
-        <input placeholder="Name" type="text">
-        <input placeholder="Password" type="text">
-        <button type= "submit">Enter</button>
-    </form>
-
+    
 </div>

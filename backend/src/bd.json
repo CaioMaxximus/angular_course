@@ -3,64 +3,26 @@
     {
       "id": 1,
       "nick": "Robert",
+      "password": "123",
       "email": "robert@email.com"
     },
     {
       "id": 2,
-      "nick": "Roberto",
-      "email": "roberto@email.com"
+      "nick": "Robertot",
+      "password": "321",
+      "email": "robertot@email.com"
     }
   ],
   "posts": [
     {
-      "authorNick": null,
-      "content": "",
+      "authorNick": "Robert",
+      "content": "Caio Maxximus\n",
       "id": 1
     },
     {
-      "authorNick": null,
-      "content": "",
+      "authorNick": "Robertot",
+      "content": "from RobertTot",
       "id": 2
-    },
-    {
-      "authorNick": null,
-      "content": "oi",
-      "id": 3
-    },
-    {
-      "authorNick": null,
-      "content": "",
-      "id": 4
-    },
-    {
-      "authorNick": null,
-      "content": "oi",
-      "id": 5
-    },
-    {
-      "authorNick": null,
-      "content": "",
-      "id": 6
-    },
-    {
-      "authorNick": null,
-      "content": "",
-      "id": 7
-    },
-    {
-      "authorNick": null,
-      "content": "",
-      "id": 8
-    },
-    {
-      "authorNick": null,
-      "content": "Aaaaaaaaaa\naaaaaaaaaa\naaaaaaa\n\na\na\na\na\na\na\na",
-      "id": 9
-    },
-    {
-      "authorNick": null,
-      "content": "A\nasdasd",
-      "id": 10
     }
   ]
 }

@@ -1,35 +1,45 @@
+import { User } from './User';
 import { HttpClient } from '@angular/common/http';
 import { Injectable, OnInit } from '@angular/core';
+import { throwError, EmptyError } from 'rxjs'
+import { catchError } from 'rxjs/operators';
+import { Observable } from 'rxjs'
+
+
 
 @Injectable({
   providedIn: 'root'
 })
-export class UserService implements OnInit{
+export class UserService implements OnInit {
 
 
-  route = "http://localhost:3002"
+  URLpaht = "http://localhost:3002"
+  
 
-  constructor(private httpClient :HttpClient) { }
+  constructor(private httpClient: HttpClient) { 
 
-  ngOnInit(){
+  }
+
+  ngOnInit() {
 
   }
 
-  verifyUser() : void{
+  showMessage(message: string): void {
+    console.log('login')
+  }
 
-    let id : string = localStorage.getItem('id')
+  verifyUser(): Observable<User> {
 
-    // if(!id){
-
-    //     return false
-    // }else{
-
-      this.httpClient.get(`${this.route}/users/${id}`).subscribe((response)=>{
-
-        console.log(response)
-      })
-
-    // }
+    const id = localStorage.getItem('id');
+    return this.httpClient.get<User>(`${this.URLpaht}/users/${id}`)
 
   }
+
+  login( user: User) : Observable<User[]>{
+    
+    return this.httpClient.get<User[]>(`${this.URLpaht}/users/?nick=${user.nick}`)
+
+  }
+
+
 }
